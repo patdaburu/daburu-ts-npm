@@ -7,7 +7,24 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "coverage",
+      "dist",
+      "test"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "all": true
   },
   "repository": {
     "type": "git",
@@ -22,6 +39,7 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "nyc": "^11.3.0",
+    "source-map-support": "^0.5.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   }
