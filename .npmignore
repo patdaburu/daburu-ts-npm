@@ -20,7 +20,10 @@ coverage
 .editorconfig
 
 #source files
-lib
+src
 
 #typescript
 tsconfig.json
+
+# node
+node_modules

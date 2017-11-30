@@ -60,3 +60,6 @@ typings/
 # TypeScript
 dist
 
+# JetBrains
+.idea
+
