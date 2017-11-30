@@ -1,6 +1,6 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is an npm template for TypeScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,6 +38,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patdaburu/daburu-ts-npm/issues"
+  },
+  "homepage": "https://github.com/patdaburu/daburu-ts-npm#readme",
   "devDependencies": {
     "@types/chai": "^4.0.6",
     "@types/mocha": "^2.2.44",
