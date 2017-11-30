@@ -1,13 +1,17 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "npm run test && npm run build",
     "build": "tsc",
-    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts --rootDir ./",
+    "clean:dist": "rm -rf dist",
+    "clean:coverage": "rm -rf coverage && rm -rf .nyc_output",
+    "clean": "npm run clean:coverage && npm run clean:dist",
+    "rebuild": "npm run clean && npm run build"
   },
   "nyc": {
     "extension": [
@@ -16,6 +20,7 @@
     ],
     "exclude": [
       "**/*.d.ts",
+      "**/*.spec.ts",
       "coverage",
       "dist",
       "test"

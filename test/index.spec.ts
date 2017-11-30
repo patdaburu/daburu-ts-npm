@@ -1,4 +1,4 @@
-import { echo } from '../lib/index';
+import { echo } from '../src/index';
 import { expect } from 'chai';
 import 'mocha';
 
