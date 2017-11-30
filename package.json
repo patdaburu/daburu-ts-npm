@@ -1,6 +1,6 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,6 +8,10 @@
     "prepublish": "npm run build",
     "build": "tsc",
     "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patdaburu/daburu-ts-npm.git"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "@types/mocha": "^2.2.44",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   }
