@@ -5,13 +5,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run lint && npm run test && npm run build && npm version patch",
     "build": "tsc",
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts --rootDir ./",
     "clean:dist": "rm -rf dist",
     "clean:coverage": "rm -rf coverage && rm -rf .nyc_output",
     "clean": "npm run clean:coverage && npm run clean:dist",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "lint": "./node_modules/tslint/bin/tslint --project ."
   },
   "nyc": {
     "extension": [
@@ -50,6 +51,7 @@
     "nyc": "^11.3.0",
     "source-map-support": "^0.5.0",
     "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   }
 }
