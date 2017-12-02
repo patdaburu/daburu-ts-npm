@@ -59,6 +59,7 @@ typings/
 
 # TypeScript
 dist
+docs
 
 # JetBrains
 .idea
