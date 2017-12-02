@@ -1,6 +1,6 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is an npm template for TypeScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
