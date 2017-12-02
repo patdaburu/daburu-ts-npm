@@ -1,11 +1,11 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "This is an npm template for TypeScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "npm run lint && npm run test && npm run build && npm version patch",
+    "prepublish": "npm run lint && npm run test && npm run build",
     "build": "tsc",
     "test": "nyc mocha -r ts-node/register test/**/*.spec.ts --rootDir ./",
     "clean:dist": "rm -rf dist",
