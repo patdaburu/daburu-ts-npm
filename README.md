@@ -14,7 +14,7 @@ npm publish
 ```
 
 ## tslint
-This project includes a `tslint.json` and `tslint` is included as a development dependency.  You can lint the project manually by running the following npm script:
+This project includes a `tslint.json` configuration and `tslint` is included as a development dependency.  You can lint the project manually by running the following npm script:
 
 ```bash
 npm run lint
@@ -27,7 +27,7 @@ If you're using WebStorm, you may need to enable `tslint`.  You can do so by per
 * Under **Languages and Frameworks | TypeScript | TSLint** click the **Enable** checkbox.
 
 ### Spaces, or tabs?
-The `tslint` configuration in this project assumes the use of tabs instead of spaces.  This may or may not be what you want.  You can change that preference by editing the [indent] rule(https://palantir.github.io/tslint/rules/indent/).
+The `tslint` configuration in this project assumes the use of tabs instead of spaces.  This may or may not be what you want.  You can change that preference by editing the [indent](https://palantir.github.io/tslint/rules/indent/) rule.
 
 If you're using WebStorm, your default configuration may prefer spaces.  If so, perform the following steps:
 
