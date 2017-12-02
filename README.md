@@ -65,3 +65,13 @@ This project uses [Mocha](https://mochajs.org/) and it just so happens that WebS
  	
  When you run a configuration using the *Run with Coverage* options, the IDE will produce a coverage report and mark up your code files coverage indicators.
  
+## Document Your Code
+ Since you're writing TypeScript, why not get free API documentation from your source code comments?  To achieve this, we're using [typedoc](http://typedoc.org/guides/doccomments/).
+ 
+You can generate the documentation by itself by running the following npm script:
+
+```bash
+npm run build:doc
+```
+
+This script is also run as part of the normal build process.
