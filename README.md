@@ -36,5 +36,32 @@ If you're using WebStorm, your default configuration may prefer spaces.  If so, 
 * Check the **Use tab character** box.
 * The `tslint.json` file in this project assumes a tab size of 4.
 
-## Running Tests
-...coming soon...
+## Running and Debugging Tests
+As we mentioned above, the project includes a unit testing and code coverage frameworks.  There are a number of ways to run and debug the tests.
+
+### Run the Tests with `npm`
+You can run the test from an `npm` script like so:
+
+```bash
+npm run test
+```
+
+This will run the tests and produce a code coverage report.
+
+### Runing Tests in WebStorm
+This project uses [Mocha](https://mochajs.org/) and it just so happens that WebStorm has nice support for this platform.
+ 
+ To run or debug a single test, you can simply *right-click* on a test file and run (or debug) it from the context menu.
+ 
+ To create a run/debug configuration for all the tests, perform these steps:
+ 
+ * From the main menu, go to **Run | Edit Configurations...** 
+ * Click the *Add New Configuration* button (or hit `Alt+Insert`).
+ * Select **Mocha** from the menu that appears.
+ * The default options are typically fine, though you'll need to add a bit of information:
+ 	+ **Extra Mocha options:** *--require ts-node/register*
+ 	+ Select **File Patterns**
+ 	+ **Test file patterns:** test/**/*.spec.ts
+ 	
+ When you run a configuration using the *Run with Coverage* options, the IDE will produce a coverage report and mark up your code files coverage indicators.
+ 
