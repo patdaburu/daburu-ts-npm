@@ -5,12 +5,12 @@
  * @returns {string} the original message, or the LOUDER version
  */
 export function echo(msg: string, loud: boolean = false): string {
-	if (!msg) {
-		return "";
-	} else if (!loud) {
-		return msg;
-	} else {
-		return msg.toUpperCase();
-	}
+    if (!msg) {
+        return '';
+    } else if (!loud) {
+        return msg;
+    } else {
+        return msg.toUpperCase();
+    }
 }
 

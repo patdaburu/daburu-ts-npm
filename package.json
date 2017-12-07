@@ -1,6 +1,6 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.10",
+  "version": "1.0.13",
   "description": "This is an npm template for TypeScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "build": "npm run build:ts && npm run build:doc",
     "build:ts": "tsc",
     "build:doc": "./node_modules/typedoc/bin/typedoc --out ./docs ./src",
-    "test": "nyc mocha -r ts-node/register test/**/*.spec.ts --rootDir ./",
+    "test": "nyc mocha -r ts-node/register ./**/*.spec.ts",
     "clean:dist": "rm -rf dist",
     "clean:coverage": "rm -rf coverage && rm -rf .nyc_output",
     "clean": "npm run clean:coverage && npm run clean:dist",
@@ -26,7 +26,8 @@
       "**/*.spec.ts",
       "coverage",
       "dist",
-      "test"
+      "test",
+      "docs"
     ],
     "reporter": [
       "html",

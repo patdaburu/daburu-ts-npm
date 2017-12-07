@@ -27,14 +27,21 @@ If you're using WebStorm, you may need to enable `tslint`.  You can do so by per
 * Under **Languages and Frameworks | TypeScript | TSLint** click the **Enable** checkbox.
 
 ### Spaces, or tabs?
-The `tslint` configuration in this project assumes the use of tabs instead of spaces.  This may or may not be what you want.  You can change that preference by editing the [indent](https://palantir.github.io/tslint/rules/indent/) rule.
+The `tslint` configuration in this project assumes the use of spaces instead of tabs.  This may or may not be what you want.  You can change that preference by editing the [indent](https://palantir.github.io/tslint/rules/indent/) rule.
 
 If you're using WebStorm, your default configuration may prefer spaces.  If so, perform the following steps:
 
 * Hit `Ctrl+Alt+2` to open **Settings**.
 * Under **Editor | Code Style | TypeScript** look at the **Tabs and Indent** tab.
-* Check the **Use tab character** box.
-* The `tslint.json` file in this project assumes a tab size of 4.
+* Check or uncheck the **Use tab character** box, depending on your preference.
+* The `tslint.json` file in this project assumes 4 spaces.
+
+### Quotes: Double or Single?
+The `tslint` configuration in this project assumes the use single (instead of double) quotes.  This may or may not be what you want.  You can change that preference by editing the [quotemark](https://palantir.github.io/tslint/rules/quotemark/) rule.
+
+* Hit `Ctrl+Alt+2` to open **Settings**.
+* Under **Editor | Code Style | TypeScript** look at the **Punctuation** tab.
+* Modify the dropdowns to reflect your preferences.
 
 ## Running and Debugging Tests
 As we mentioned above, the project includes a unit testing and code coverage frameworks.  There are a number of ways to run and debug the tests.
