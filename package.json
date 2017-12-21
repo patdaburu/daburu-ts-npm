@@ -1,11 +1,11 @@
 {
   "name": "daburu-ts-npm",
-  "version": "1.0.13",
+  "version": "1.0.17",
   "description": "This is an npm template for TypeScript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepublish": "npm run lint && npm run test && npm run build",
+    "prepare": "npm run lint && npm run test && npm run build",
     "build": "npm run build:ts && npm run build:doc",
     "build:ts": "tsc",
     "build:doc": "./node_modules/typedoc/bin/typedoc --out ./docs ./src",
@@ -58,5 +58,8 @@
     "tslint-sonarts": "^1.2.0",
     "typedoc": "^0.9.0",
     "typescript": "^2.6.2"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:8081/repository/npm-hosted/"
   }
 }
